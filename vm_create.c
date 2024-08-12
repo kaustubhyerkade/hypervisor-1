@@ -1,4 +1,19 @@
 //create a VM using libvert library
+//Install libvirt: Ensure libvirt and its development packages are installed on your system.
+
+On Debian/Ubuntu: sudo apt-get install libvirt-dev
+
+On Red Hat/CentOS: sudo yum install libvirt-devel
+
+Linking with libvirt: When compiling the code, 
+link against the libvirt library using -lvirt.
+
+//to compile - 
+gcc -o create_vm create_vm.c -lvirt
+./create_vm
+
+
+--------------
 
 #include <stdio.h>
 #include <stdlib.h>
